@@ -3,7 +3,7 @@
 此專案示範 Java 的四則運算，在終端機編譯執行請用以下指令
 
 ```
-$ javac javac -d . *.java
+$ javac -d . *.java
 $ java arithmeticdemo.ArithmeticDemo
 ```
 
