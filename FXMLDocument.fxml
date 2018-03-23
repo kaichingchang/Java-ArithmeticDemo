@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.collections.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="160" prefWidth="200" xmlns:fx="http://javafx.com/fxml/1" fx:controller="arithmeticdemo.FXMLDocumentController">
+    <children>
+        <TextField layoutX="10" layoutY="10" minHeight="16" minWidth="69" fx:id="n1"></TextField>
+        <ChoiceBox layoutX="10" layoutY="40" value="+" fx:id="choice">
+            <items>
+                <FXCollections fx:factory="observableArrayList">
+                    <String fx:value="+" />
+                    <String fx:value="-" />
+                    <String fx:value="*" />
+                    <String fx:value="/" />
+                </FXCollections>
+            </items>
+        </ChoiceBox>
+        <TextField layoutX="10" layoutY="70" minHeight="16" minWidth="69" fx:id="n2"></TextField>
+        <Button layoutX="10" layoutY="100" text="計算" onAction="#handleButtonAction" fx:id="button" />
+        <Label layoutX="10" layoutY="130" text="結果是" minHeight="16" minWidth="69" fx:id="label" />
+    </children>
+</AnchorPane>
+
+<!--
+   《程式語言教學誌》的範例程式
+    http://kaiching.org/
+    檔名：FXMLDocument.fxml
+    功能：四則運算的 View 檔案
+    作者：張凱慶
+-->
